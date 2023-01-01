@@ -62,3 +62,8 @@ a:hover {
 
   }
 }
+
+html {
+  zoom: 0.8; /* Old IE only */
+  -moz-transform: scale(0.8);
+}
