@@ -1,0 +1,121 @@
+html {}
+
+.hands {
+    width: 65px;
+    height: 62px;
+    background-size: 100% auto !important;
+    background-position: center !important;
+    margin-left: 50px;
+    display: inline-block;
+   
+    transition: filter 0.8s ease-out;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.full-color {
+    filter: none;
+}
+
+.hands:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+.like {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png) no-repeat;
+    animation: like 2.4s infinite forwards;
+    transform-origin: bottom left;
+}
+
+.dislike {
+    background: url(https://scontent-hkg4-2.xx.fbcdn.net/v/t1.15752-9/319183000_1538654129932247_3334259825525266828_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cMM9eylrOt0AX-8cYW7&_nc_ht=scontent-hkg4-2.xx&oh=03_AdR67F4GqlFQAnsbQB0gw_Nygm4US8G9oG2nrrhWIHp2mQ&oe=63C4D11F) no-repeat;
+    animation: dislike 2.4s infinite forwards 1.2s;
+    transform-origin: top right;
+}
+
+@keyframes like {
+    0% {
+        transform: rotate(0) scale(1)
+    }
+
+    50% {
+        transform: rotate(-4deg) scale(1.12)
+    }
+
+    100% {
+        transform: rotate(0) scale(1)
+    }
+}
+
+@keyframes dislike {
+    0% {
+        transform: rotate(0) scale(1)
+    }
+
+    50% {
+        transform: rotate(-4deg) scale(1.12)
+    }
+
+    100% {
+        transform: rotate(0) scale(1)
+    }
+}
+
+
+
+.detect-div {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.detect-div img {
+    margin-right: 30px;
+    image-rendering: pixelated;
+}
+
+
+
+.progress {
+    width: 80%;
+}
+
+.child-div {
+    display: flex;
+}
+
+.child-div p {
+    display: inline;
+    width: 15%;
+}
+
+.review-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-evaluation {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.big-icon {
+    width: 105px;
+    height: 102px;
+}
+
+.no-margin {
+    margin: 0
+}
+
+.choose-style {
+    display: flex;
+}
+
+.result-evaluation-item {
+    margin: 20px
+}
