@@ -1,14 +1,16 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
-import logo from '../../img/3in1logo.png'
+import logo from "../../img/3in1logo.png";
 import { Link } from "react-scroll";
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name"><img src={logo} style={{width:"100px"}}/></div>
+        <div className="n-name">
+          <img src={logo} style={{ width: "100px" }} />
+        </div>
         <Toggle />
       </div>
       {/* right */}
@@ -16,23 +18,22 @@ const navbar = () => {
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
             <li style={{}}>
-              <Link to="services" spy={true} smooth={true}>
+              <Link to="services" offset={-300} spy={true} smooth={true}>
                 Our Serivces
               </Link>
             </li>
             <li>
-              <Link to="main-upload" spy={true} smooth={true}>
+              <Link to="main-upload" offset={-400} spy={true} smooth={true}>
                 Try our product now!
               </Link>
             </li>
             <li>
-              <Link to="portfolio" spy={true} smooth={true}>
+              <Link to="portfolio" offset={-690} spy={true} smooth={true}>
                 Our Teams
               </Link>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   );

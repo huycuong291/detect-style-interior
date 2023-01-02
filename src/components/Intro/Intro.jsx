@@ -29,24 +29,29 @@ const Intro = () => {
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Group: 3in1 </span>
           <span>Detect all your furniture style</span>
-          <span>
-          “Predicting the future isn’t magic,
-              It’s artificial intelligence.”
-          </span>
+          <span>“Predicting the future isn’t magic, It’s artificial intelligence.”</span>
         </div>
-        <Link to="main-upload" smooth={true} spy={true}>
+        <Link to="main-upload" offset={-400} smooth={true} spy={true}>
           <button className="button i-button">Try now!</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
-        <a href={"https://www.instagram.com/cockroach2901/"}> <img src={Instagram} alt="" /></a>
-         <a href={"https://www.linkedin.com/in/huy-c%C6%B0%E1%BB%9Dng-1982a21a3/"}> <img src={LinkedIn} alt="" /></a>
-         <a href={"https://github.com/huycuong291"}>  <img src={Github} alt="" /></a>
+          <a href={"https://www.instagram.com/cockroach2901/"} target="_blank">
+            {" "}
+            <img src={Instagram} alt="" />
+          </a>
+          <a href={"https://www.linkedin.com/in/huy-c%C6%B0%E1%BB%9Dng-1982a21a3/"} target="_blank">
+            {" "}
+            <img src={LinkedIn} alt="" />
+          </a>
+          <a href={"https://github.com/huycuong291"} target="_blank">
+            {" "}
+            <img src={Github} alt="" />
+          </a>
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-
         <img src={furniture} alt="" />
         {/* animation */}
 
@@ -55,8 +60,7 @@ const Intro = () => {
           whileInView={{ left: "68%" }}
           transition={transition}
           className="floating-div"
-        >
-        </motion.div>
+        ></motion.div>
 
         {/* animation */}
         <motion.div
