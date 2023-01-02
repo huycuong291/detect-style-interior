@@ -46,7 +46,7 @@ function UploadFile() {
     setIsError(false)
     setLoading(true)
     listImageBase64.length ? listImageBase64.forEach(item => {
-      axios.post("http://127.0.0.1:5000/detect", { base64: item }).then(function (response) {
+      axios.post("https://interior-object-detect-backend-production.up.railway.app/detect", { base64: item }).then(function (response) {
         console.log(response)
         if (response.data !== "ERROR") {
           setDetected(true)
