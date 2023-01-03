@@ -108,7 +108,7 @@ function UploadFile() {
         </div>
       </div>
 
-      {isDetected && !isError && <DetectAndShow data={dataResponse}></DetectAndShow>}
+      {isDetected && !isError && <DetectAndShow darkMode={darkMode} data={dataResponse}></DetectAndShow>}
 
     </>
   );

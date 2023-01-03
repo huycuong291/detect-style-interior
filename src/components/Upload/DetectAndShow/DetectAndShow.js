@@ -97,7 +97,7 @@ const DetectAndShow = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <h1 className="review-title">Please Let Us Know Your Opinion</h1>
+                            <p className="review-title">Please Let Us Know Your Opinion</p>
                             {!reviewed[index] &&
                                 <div className="result-evaluation">
                                     <div className="result-evaluation" onClick={() => handleClickReview("like", index)}>
@@ -127,6 +127,7 @@ const DetectAndShow = (props) => {
                                                 return (
                                                     <div className="result-evaluation-item" onClick={() => handleClickStyle(item, index)}>
                                                         <Card
+                                                            darkmode={props.darkMode}
                                                             emoji={handleRenderImg(item)}
                                                             heading={item}
                                                         />
