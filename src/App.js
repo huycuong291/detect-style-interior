@@ -18,7 +18,7 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      <Navbar />
+      <Navbar darkmode={darkMode} />
       <Intro />
       <Services />
       <UploadFile />

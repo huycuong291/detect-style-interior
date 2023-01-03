@@ -84,7 +84,7 @@ function UploadFile() {
 
   return (
     <>
-      <div className="main-upload" id="main-upload">
+      <div className="main-upload" id="main-upload" style={{backgroundColor:darkMode&& "lightslategrey"}}>
         <span style={{ color: darkMode ? 'white' : '' }}>Upload image file</span>
         <span>And Detect Now!</span>
         <div className="box-upload">
