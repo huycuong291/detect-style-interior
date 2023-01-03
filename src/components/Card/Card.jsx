@@ -3,9 +3,9 @@ import "./Card.css";
 
 const Card = ({ emoji, heading, detail, color, darkmode }) => {
   return (
-    <div className="card" style={{ borderColor: { color } }}>
+    <div className="card" style={{ borderColor: { color }, backgroundColor: "white" }}>
       <img src={emoji} alt="" />
-      <span style={{ color: darkmode ? "white" : "black" }}>{heading}</span>
+      <span style={{ color: "black" }}>{heading}</span>
     </div>
   );
 };
