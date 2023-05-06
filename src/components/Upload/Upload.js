@@ -45,19 +45,21 @@ function UploadFile() {
     setLoading(true);
     listImageBase64.length
       ? listImageBase64.forEach((item) => {
-          axios.post("https://web-production-68e5.up.railway.app/detect", { base64: item }).then(function (response) {
-            console.log(response);
-            if (response.data !== "ERROR") {
-              setDetected(true);
-              setLoading(false);
-              const arrResponse = Object.keys(response.data).map((key) => response.data[key]);
-              setDataResponse([...arrResponse]);
-            } else {
-              setDetected(true);
-              setLoading(false);
-              setIsError(true);
-            }
-          });
+          axios
+            .post("https://interior-object-detect-backend-production.up.railway.app/detect", { base64: item })
+            .then(function (response) {
+              console.log(response);
+              if (response.data !== "ERROR") {
+                setDetected(true);
+                setLoading(false);
+                const arrResponse = Object.keys(response.data).map((key) => response.data[key]);
+                setDataResponse([...arrResponse]);
+              } else {
+                setDetected(true);
+                setLoading(false);
+                setIsError(true);
+              }
+            });
         })
       : setLoading(false);
 
