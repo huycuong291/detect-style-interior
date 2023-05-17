@@ -45,7 +45,7 @@ function UploadFile() {
     setLoading(true);
     listImageBase64.length
       ? listImageBase64.forEach((item) => {
-          axios.post("https://web-production-e5836.up.railway.app/detect", { base64: item }).then(function (response) {
+          axios.post("https://web-production-1fd01.up.railway.app/detect", { base64: item }).then(function (response) {
             console.log(response);
             if (response.data !== "ERROR") {
               setDetected(true);
