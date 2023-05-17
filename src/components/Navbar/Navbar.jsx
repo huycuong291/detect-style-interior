@@ -11,7 +11,7 @@ const navbar = (props) => {
       {/* left */}
       <div className="n-left">
         <div className="n-name">
-          <img src={logo} style={{ width: "100px" }} />
+          <img src={"https://www.freepnglogos.com/uploads/coffee-logo-png/coffee-logo-design-creative-idea-logo-elements-2.png"} style={{ width: "100px" }} />
         </div>
         <Toggle />
       </div>

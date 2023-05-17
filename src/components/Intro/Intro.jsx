@@ -27,7 +27,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Group: 3in1 </span>
+          <span style={{ color: darkMode ? "white" : "" }}>Group: 04 </span>
           <span>Detect all your furniture style</span>
           <span>“Predicting the future isn’t magic, It’s artificial intelligence.”</span>
         </div>

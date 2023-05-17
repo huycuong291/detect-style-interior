@@ -22,7 +22,7 @@ function App() {
       <Intro />
       <Services />
       <UploadFile />
-      <Portfolio />
+
       <Footer />
     </div>
   );
